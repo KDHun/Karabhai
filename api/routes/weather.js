@@ -35,7 +35,6 @@ router.post("/getWeather", async (req, res) => {
   };
 
   await getWeather();
-  console.log("Final Weather Data:", weatherData);
   res.send(weatherData);
 });
 
